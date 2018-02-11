@@ -1,13 +1,71 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<head>
-	<title>Hangman</title>
+	<head>
+		<title>Hangman</title>
+		<script src="assets/js/jquery-1.10.2.js"></script>
+		<script src="assets/js/custom.modernizr.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1">
+          <h1>Hangman</h1>
+        </div>
+      </div>
+    </div>  
 
-	<style type="text/css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</style>
-	<style type="text/css">assets/style.css</style>
-	<style type="text/css">assets/reset.css</style>
-</head>
-<body>
+    <hr>
 
-</body>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-5 col-md-5 col-md-offset-1">
+          <div class="row">
+            <div id="hangman-sprite" class="hangman-sprite0"></div>
+          </div>
+        </div>
+
+        <div class="col-sm-5 col-md-5 play-area initially-hidden">
+          <div class="row">
+            <div id="unguessed-letters"></div>
+          </div>
+          <div class="row">
+            <div id="word-container" class="initially-hidden">
+              <p class="letter"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div id="incorrect-guesses">
+              <h3 class="light-weight">Incorrect Guesses: </h3>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn btn-lg btn-success" id="play-again">Play again?</button>
+          </div>
+        </div>
+
+        <div class="col-md-6 game-setup">
+
+          <div class="btn-group" id="choose-category">
+            <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown">
+              Select a category <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li id="coding">Coding</li>
+              <li id="potter">Harry Potter</li>
+              <li id="lotr">Lord of the Rings</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+	</body>
 </html>
