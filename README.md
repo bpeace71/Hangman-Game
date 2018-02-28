@@ -1,7 +1,7 @@
-# Hangman
+# Theron's Doom
 
 by Brian Peace
 
 //Project Description//
 
-A basic hangman game built in JavaScript.  The user selects a theme from the dropdown and a word is chosen.  The user selects letters in an attempt to solve the word provided.
+A Hangman game with three categories: Coding, Harry Potter, and Lord of the Rings. It employs Bootstrap and CSS to construct and style the site and Javascript and JQuery to make it function.
